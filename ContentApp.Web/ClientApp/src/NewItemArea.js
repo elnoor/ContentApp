@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { categories } from "./Content";
 
-const emptyItem = { name: "", value: "", category: 0 };
+const emptyItem = { name: "", value: 0, category: 0 };
 // Made this area as separate component so that form change won't rerender the whole Content component
 export default function NewItemArea(props) {
   const [item, setItem] = useState({ ...emptyItem });
